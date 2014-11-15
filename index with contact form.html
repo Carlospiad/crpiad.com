@@ -288,8 +288,38 @@
                   <div class="profile_row website"> <span class="th">Website</span><span class="td"></span> </div>
                 </div>
               </div>
-
-
+              <div class="sidebar contact_sidebar">
+                <aside class="widget widget_qrcode_vcard" id="qrcode-vcard-widget-2">
+                  <h3 class="widget_title">VCARD</h3>
+                  <div class="widget_inner">
+                    <div class="qrcode"></div>
+                  </div>
+                </aside>
+              </div>
+              <div class="contact_form">
+                <div class="contact_form_data">
+                  <div class="sc_contact_form">
+                    <h3 class="title">Let's keep in touch</h3>
+                    <form action="include/sendmail.php" method="post">
+                      <div class="field">
+                        <label class="required" for="sc_contact_form_username">Your Name</label>
+                        <input type="text" name="username" id="sc_contact_form_username" />
+                      </div>
+                      <div class="field">
+                        <label class="required" for="sc_contact_form_email">Your Email</label>
+                        <input type="text" name="email" id="sc_contact_form_email" />
+                      </div>
+                      <div class="field message">
+                        <label class="required" for="sc_contact_form_message">Your Message</label>
+                        <textarea name="message" id="sc_contact_form_message"></textarea>
+                      </div>
+                      <div class="button"><input  type="submit" value="Send it!"> </div>
+                      
+                    </form>
+                    <div class="result sc_infobox"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- .section_body --> 
           </section>
